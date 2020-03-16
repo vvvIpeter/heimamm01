@@ -19,7 +19,7 @@
             <el-input v-model="form.imgCode" autocomplete="off"></el-input>
           </el-col>
           <el-col :span="7" class="col_imgBox">
-            <img class="imgBox" src="../../../assets/login_captcha.png" alt="">
+          <button class="imgBox" @click.prevent="">获取用户验证码</button>
           </el-col>
         </el-row>
       </el-form-item>
@@ -116,6 +116,11 @@ export default {
  .imgBox{
     width: 143px;
     height: 41px;
+    background:rgba(255,255,255,1);
+    font-size:15px;
+font-family:Microsoft YaHei;
+font-weight:400;
+color:rgba(86,88,93,1);
   }
   }
 .dialog-footer{
